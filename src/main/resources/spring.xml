@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dev" class="com.test.Developer" autowire="byType">
+<!--        <property name="computer" ref="desk"></property>-->
+<!--        <constructor-arg ref="lap"></constructor-arg>-->
+    </bean>
+    <bean id="lap" class="com.test.Laptop"></bean>
+    <bean id="desk" class="com.test.Desktop" primary="true"></bean>
+</beans>
